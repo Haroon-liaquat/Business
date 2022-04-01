@@ -1,0 +1,46 @@
+<div class="slider-center">
+	<h1 class="slider-Featured-h1">
+		Featured Services
+	</h1>
+	<div class="slider-wrapper">
+		<div class="slider-inner">
+			{% for key, content in data.content %}
+						{% for key2, api in content.apiData %}
+				<div class="slider-card">
+        <img src="{{api.img}}">
+					<div class="slider-content">
+          
+							<h1>
+								<a href="product/{{content.id}}">{{content.title}}</a>
+							</h1>
+              <h2> 
+			  <a href="product/{{content.id}}/api/{{api.id}}">{{ api.title }}</a>
+			  </h2>
+							
+
+						{# {% set shortContent = content.body %} #}
+						{# <h3>
+							<a href="product/{{content.id}}/api/{{api.id}}">{{ api.body | truncate(22,20) | raw }}</a>
+						</h3> #}
+					</div>
+				</div>
+						{% endfor %}
+			{% endfor %}
+		</div>
+	</div>
+
+	<div class="slider-map">
+
+		{% for key, content in data.sliderPAges %}
+
+			{% if content == 1 %}
+				<button class="slider-active {{content}}"></button>
+			{% else %}
+				<button class="{{content}}"></button>
+			{% endif %}
+
+
+		{% endfor %}
+
+	</div>
+</div>

@@ -1,0 +1,27 @@
+<?php 
+
+// function frontpageservicesslider_page_attachments(array &$page) {
+//   $page['#attached']['library'][] = 'frontpageservicesslider/frontpageservicesslider_css';
+// }
+
+/**
+ * Implements hook_theme().
+ */
+function frontpageservicesslider_theme() {
+  return [
+    'front_page_services_slider' => [
+      'render element' => 'children',
+      'variables' =>
+      [
+        'data' => []
+      ]
+    ],
+  ];
+}
+
+function frontpageservicesslider_preprocess(&$variables, $hook) {
+  $variables['get_payment'] = file_create_url(drupal_get_path('module', 'frontpageservicesslider') . '/images/get_payment.png');
+  $variables['post_paid'] = file_create_url(drupal_get_path('module', 'frontpageservicesslider') . '/images/post_paid.png');
+  $variables['reading'] = file_create_url(drupal_get_path('module', 'frontpageservicesslider') . '/images/reading.png');
+  }
+

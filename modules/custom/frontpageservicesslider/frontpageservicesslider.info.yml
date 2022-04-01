@@ -1,0 +1,11 @@
+name: front page services slider Module
+type: module
+description: 'Controls the visual Front page block on the front page. this block has input from the configuration page'
+package: Front Page
+# version: VERSION
+core: 8.x
+
+# Information added by Drupal.org packaging script on 2020-06-17
+version: '8.9.1'
+project: 'drupal'
+datestamp: 1592418285
