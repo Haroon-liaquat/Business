@@ -796,13 +796,13 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 $databases['default']['default'] = array (
-  'database' => 'onboarding_03_03_22',
-  'username' => 'root',
-  'password' => '',
+  'database' => 'business_portal',
+  'username' => 'haroon123',
+  'password' => 'haroon123123',
   'prefix' => '',
-  'host' => 'localhost',
+  'host' => 'haroon-jazz-haroon12345-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com',
   'port' => '3306',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'namespace' => 'haroon12345-dev',
   'driver' => 'mysql',
 );
 $settings['config_sync_directory'] = 'sites/default/files/config_9f2pOTjN82czUBotJtydVC-Q2cJIGnBVwXsO1H7vOlSXEreh4NE7JZEYisTiJQSG4C2L-jMccw/sync';
