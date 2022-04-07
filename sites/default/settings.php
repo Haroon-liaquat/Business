@@ -802,7 +802,7 @@ $databases['default']['default'] = array (
   'prefix' => '',
   'host' => 'mysql.haroon12345-dev.svc.cluster.local',
   'port' => '3306',
-  'namespace' => 'haroon12345-dev',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );
 $settings['config_sync_directory'] = 'sites/default/files/config_9f2pOTjN82czUBotJtydVC-Q2cJIGnBVwXsO1H7vOlSXEreh4NE7JZEYisTiJQSG4C2L-jMccw/sync';
