@@ -800,9 +800,9 @@ $databases['default']['default'] = array (
   'username' => 'haroon123',
   'password' => 'haroon123123',
   'prefix' => '',
-  'host' => '',
+  'host' => 'mysql.haroon12345-dev.svc.cluster.local',
   'port' => '3306',
-  'namespace' => 'mysql.haroon12345-dev.svc.cluster.local',
+  'namespace' => 'haroon12345-dev',
   'driver' => 'mysql',
 );
 $settings['config_sync_directory'] = 'sites/default/files/config_9f2pOTjN82czUBotJtydVC-Q2cJIGnBVwXsO1H7vOlSXEreh4NE7JZEYisTiJQSG4C2L-jMccw/sync';
